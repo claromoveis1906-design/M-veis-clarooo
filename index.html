@@ -1,158 +1,94 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Móveis Usados, Som e Instrumentos Musicais</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f4f7fb;
-      color: #333;
-      line-height: 1.6;
-    }
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f2f4f8;
+    color: #333;
+  }
 
-    header {
-      background: #1a2a6c;
-      color: white;
-      padding: 50px 20px;
-      text-align: center;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    }
+  header {
+    background: linear-gradient(135deg, #1a2a6c, #243b8a);
+    color: white;
+    padding: 45px 20px;
+    text-align: center;
+  }
 
-    section {
-      padding: 30px 20px;
-      max-width: 1200px;
-      margin: auto;
-    }
+  section {
+    padding: 25px 15px;
+    max-width: 1200px;
+    margin: auto;
+  }
 
-    h2 {
-      text-align: center;
-      color: #1a2a6c;
-      margin-bottom: 25px;
-      border-bottom: 2px solid #1a2a6c;
-      padding-bottom: 10px;
-    }
+  h2 {
+    text-align: center;
+    color: #1a2a6c;
+    margin-bottom: 20px;
+  }
 
-    .grid-produtos {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-    }
+  .grid-produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+  }
 
-    .card {
-      background: white;
-      padding: 15px;
-      border-radius: 12px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-      text-align: center;
-    }
+  .card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.2s;
+  }
 
-    .card img {
-      width: 100%;
-      height: 350px;
-      object-fit: cover;
-      border-radius: 8px;
-      margin-bottom: 15px;
-    }
+  .card:hover {
+    transform: translateY(-5px);
+  }
 
-    .btn {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 12px 15px;
-      background: #1a2a6c;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-      width: 90%;
-      transition: 0.3s;
-    }
+  .card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 12px;
+  }
 
-    .btn-whatsapp { background: #25d366; }
-    .btn-som { background: #ff4b2b; }
+  .preco {
+    font-size: 24px;
+    color: #1a2a6c;
+    font-weight: bold;
+    margin: 10px 0;
+  }
 
-    .contact-info {
-      background: white;
-      padding: 30px;
-      border-radius: 12px;
-      text-align: center;
-      margin-top: 20px;
-    }
+  .btn {
+    display: block;
+    margin: 12px auto 0;
+    padding: 14px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    width: 95%;
+  }
 
-    footer {
-      background: #1a2a6c;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
-    }
-  </style>
-</head>
-<body>
+  .btn-whatsapp {
+    background: #25d366;
+  }
 
-<header>
-  <h1>Móveis Usados em Geral</h1>
-  <p>Som e Instrumentos Musicais | Cascavel - PR</p>
-</header>
+  .btn-som {
+    background: #ff4b2b;
+  }
 
-<section>
-  <h2>Galeria de Móveis e Eletros</h2>
-  <div class="grid-produtos">
-    
-    <div class="card">
-      <img src="1000057312.jpg" alt="Cama Casal">
-      <h3>Cama Casal</h3>
-      <p>Preço: <strong>R$ 650,00</strong></p>
-      <a class="btn btn-whatsapp" href="https://wa.me/554588040561?text=Tenho%20interesse%20na%20cama%20casal">Comprar no WhatsApp</a>
-    </div>
+  .contact-info {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+  }
 
-    <div class="card">
-      <img src="1000057336.jpg" alt="Mesa com 4 Cadeiras">
-      <h3>Mesa com 4 Cadeiras</h3>
-      <p>Preço: <strong>R$ 700,00</strong></p>
-      <a class="btn btn-whatsapp" href="https://wa.me/554588040561?text=Tenho%20interesse%20na%20mesa%20com%204%20cadeiras">Comprar no WhatsApp</a>
-    </div>
-
-    <div class="card">
-      <img src="1000057332.jpg" alt="Geladeira">
-      <h3>Geladeira e Micro-ondas</h3>
-      <p>Status: <strong>Disponível</strong></p>
-      <a class="btn btn-whatsapp" href="https://wa.me/554588040561?text=Olá!%20Tenho%20interesse%20na%20geladeira%20e%20no%20microondas.">Chamar no WhatsApp</a>
-    </div>
-
-  </div>
-</section>
-
-<section>
-  <h2>Setor de Som e Instrumentos</h2>
-  <div class="grid-produtos">
-    
-    <div class="card" style="border: 2px solid #ff4b2b;">
-      <img src="1000057340.jpg" alt="Caixa de Som Philco">
-      <h3>Caixa de Som Philco</h3>
-      <p>Potência e qualidade.</p>
-      <a class="btn btn-som" href="https://wa.me/5545999568283?text=Olá!%20Tenho%20interesse%20na%20caixa%20de%20som%20Philco.">WhatsApp do Som: (45) 99956-8283</a>
-    </div>
-
-  </div>
-</section>
-
-<section id="contato">
-  <h2>Contato e Endereço</h2>
-  <div class="contact-info">
-    <p> <strong>Localização:</strong> Rua Erechim, nº 1906 - Cascavel/PR</p>
-    <hr>
-    <p> <strong>Móveis:</strong> (45) 8804-0561</p>
-    <p> <strong>Som e Instrumentos:</strong> (45) 99956-8283</p>
-  </div>
-</section>
-
-<footer>
-  <p>© 2026 - Móveis Usados & Cia | Cascavel - PR</p>
-</footer>
-
-</body>
-</html>
-
+  footer {
+    background: #1a2a6c;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    font-size: 14px;
+  }
+</style>
