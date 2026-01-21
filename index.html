@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Móveis Usados, Som e Instrumentos Musicais</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f7fb;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #1a2a6c;
+      color: white;
+      padding: 50px 20px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    header h1 { margin: 0; font-size: 2rem; }
+    header p { font-size: 1.1rem; opacity: 0.9; }
+
+    section {
+      padding: 30px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      color: #1a2a6c;
+      margin-bottom: 25px;
+      border-bottom: 2px solid #1a2a6c;
+      padding-bottom: 10px;
+    }
+
+    .grid-produtos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 15px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 12px 15px;
+      background: #1a2a6c;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      width: 90%;
+      transition: 0.3s;
+    }
+
+    .btn-whatsapp { background: #25d366; }
+    .btn-som { background: #ff4b2b; }
+
+    .btn:hover { opacity: 0.8; }
+
+    .contact-info {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    footer {
+      background: #1a2a6c;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Móveis Usados em Geral</h1>
+  <p>Som e Instrumentos Musicais | Cascavel - PR</p>
+</header>
+
+<section>
+  <h2>Nossos Produtos</h2>
+  <div class="grid-produtos">
+    
+    <div class="card">
+      <img src="cama.jpg" alt="Camas">
+      <h3>Camas e Colchões</h3>
+      <p>Modelos de casal e solteiro em ótimo estado.</p>
+      <a class="btn btn-whatsapp" href="https://wa.me/554588040561?text=Olá!%20Vi%20no%20site%20e%20tenho%20interesse%20nas%20CAMAS.">Comprar no WhatsApp</a>
+    </div>
+
+    <div class="card">
+      <img src="mesa.jpg" alt="Mesas">
+      <h3>Mesas e Cadeiras</h3>
+      <p>Vários modelos de mesas para sua casa.</p>
+      <a class="btn btn-whatsapp" href="https://wa.me/554588040561?text=Olá!%20Vi%20no%20site%20e%20tenho%20interesse%20nas%20MESAS%20E%20CADEIRAS.">Comprar no WhatsApp</a>
+    </div>
+
+    <div class="card">
+      <img src="geladeira.jpg" alt="Eletrodomésticos">
+      <h3>Eletrodomésticos</h3>
+      <p>Geladeiras, fogões e micro-ondas usados.</p>
+      <a class="btn btn-whatsapp" href="https://wa.me/554588040561?text=Olá!%20Vi%20no%20site%20e%20tenho%20interesse%20nos%20ELETRODOMÉSTICOS.">Comprar no WhatsApp</a>
+    </div>
+
+    <div class="card" style="border: 2px solid #ff4b2b;">
+      <img src="som.jpg" alt="Som e Instrumentos">
+      <h3>Som e Instrumentos</h3>
+      <p>Equipamentos profissionais e instrumentos musicais.</p>
+      <a class="btn btn-som" href="https://wa.me/5545999568283?text=Olá!%20Tenho%20interesse%20nos%20EQUIPAMENTOS%20DE%20SOM%20E%20INSTRUMENTOS.">Chamar no WhatsApp do Som</a>
+    </div>
+
+  </div>
+</section>
+
+<section id="contato">
+  <h2>Endereço e Contato</h2>
+  <div class="contact-info">
+    <p> <strong>Localização:</strong> Rua Erechim, nº 1906 - Cascavel/PR</p>
+    <hr>
+    <p> <strong>Móveis e Geral:</strong> (45) 8804-0561</p>
+    <p> <strong>Som e Instrumentos:</strong> (45) 99956-8283</p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 - Móveis Usados & Cia | Todos os direitos reservados</p>
+</footer>
+
+</body>
+</html>
+
