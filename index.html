@@ -5,90 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Móveis Usados, Som e Instrumentos Musicais</title>
   <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f4f7fb;
-      color: #333;
-      line-height: 1.6;
-    }
-
-    header {
-      background: #1a2a6c;
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    }
-
-    section {
-      padding: 25px 15px;
-      max-width: 1200px;
-      margin: auto;
-    }
-
-    h2 {
-      text-align: center;
-      color: #1a2a6c;
-      margin-bottom: 20px;
-      border-bottom: 2px solid #1a2a6c;
-      padding-bottom: 5px;
-    }
-
-    .grid-produtos {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-    }
-
-    .card {
-      background: white;
-      padding: 15px;
-      border-radius: 12px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-      text-align: center;
-    }
-
-    .card img {
-      width: 100%;
-      height: 350px;
-      object-fit: cover;
-      border-radius: 8px;
-      margin-bottom: 15px;
-    }
-
-    .btn {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 12px 15px;
-      background: #1a2a6c;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-      width: 90%;
-      transition: 0.3s;
-    }
-
+    body { margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f4f7fb; color: #333; line-height: 1.6; }
+    header { background: #1a2a6c; color: white; padding: 40px 20px; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.2); }
+    section { padding: 25px 15px; max-width: 1200px; margin: auto; }
+    h2 { text-align: center; color: #1a2a6c; margin-bottom: 20px; border-bottom: 2px solid #1a2a6c; padding-bottom: 5px; }
+    .grid-produtos { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+    .card { background: white; padding: 15px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-align: center; }
+    .card img { width: 100%; height: 350px; object-fit: cover; border-radius: 8px; margin-bottom: 15px; }
+    .garantia { background: #d4edda; color: #155724; font-size: 0.85em; font-weight: bold; padding: 5px; border-radius: 5px; margin-bottom: 10px; display: block; }
+    .sem-garantia { background: #f8d7da; color: #721c24; font-size: 0.85em; font-weight: bold; padding: 5px; border-radius: 5px; margin-bottom: 10px; display: block; }
+    .price { font-size: 1.6em; color: #2ecc71; font-weight: bold; margin: 10px 0; }
+    .specs { font-size: 0.85em; color: #555; text-align: left; background: #f8f9fa; padding: 10px; border-radius: 8px; margin-bottom: 10px; }
+    .btn { display: inline-block; margin-top: 10px; padding: 12px 15px; background: #1a2a6c; color: white; text-decoration: none; border-radius: 8px; font-weight: bold; width: 90%; transition: 0.3s; }
     .btn-whatsapp { background: #25d366; }
     .btn-som { background: #ff4b2b; }
-    .btn-consignacao { background: #6c5ce7; }
-
-    .contact-info {
-      background: white;
-      padding: 25px;
-      border-radius: 12px;
-      text-align: center;
-      margin-top: 20px;
-    }
-
-    footer {
-      background: #1a2a6c;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      margin-top: 30px;
-    }
+    .contact-info { background: white; padding: 25px; border-radius: 12px; text-align: center; margin-top: 20px; }
+    footer { background: #1a2a6c; color: white; text-align: center; padding: 15px; margin-top: 30px; }
   </style>
 </head>
 <body>
@@ -99,49 +31,53 @@
 </header>
 
 <section>
-  <h2>Pegamos em Consignação</h2>
-  <div class="card" style="border: 2px solid #6c5ce7; margin-bottom: 30px;">
-    <h3>Quer vender seu móvel ou instrumento?</h3>
-    <p>Nós aceitamos produtos em <strong>consignação</strong>! Entre em contato e saiba como funciona.</p>
-    <a class="btn btn-consignacao" href="https://wa.me/554588040561?text=Olá!%20Tenho%20interesse%20em%20deixar%20um%20produto%20em%20CONSIGNAÇÃO.">Quero Consignar meu Produto</a>
+  <h2>Smartphone em Destaque</h2>
+  <div class="grid-produtos" style="grid-template-columns: 1fr; max-width: 450px; margin: auto;">
+    <div class="card">
+      <span class="sem-garantia">⚠️ Produto sem garantia</span>
+      <img src="1000098402.jpg" alt="Blackview BV4800">
+      <h3>Blackview BV4800</h3>
+      <div class="specs">
+        <strong>Especificações:</strong><br>
+        • Tela 5.45" HD+ | Android 13 Go<br>
+        • Processador Helio A22 Quad Core 2.0GHz<br>
+        • Memória: 3GB RAM / 64GB Armazenamento<br>
+        • Câmera 13MP | IP68 (Resistente)
+      </div>
+      <div class="price">R$ 1.000,00</div>
+      <a class="btn btn-whatsapp" href="https://wa.me/554588040561?text=Olá!%20Tenho%20interesse%20no%20Blackview%20BV4800%20por%20R$1000.">Comprar no WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Sons e Instrumentos Musicais</h2>
+  <div class="grid-produtos">
+    <div class="card" style="border: 2px solid #ff4b2b;">
+      <span class="garantia">✅ 2 Meses de Garantia</span>
+      <h3>Aparelhos de Som</h3>
+      <p>Consulte nossos modelos disponíveis via WhatsApp.</p>
+      <a class="btn btn-som" href="https://wa.me/5545999568283?text=Olá!%20Gostaria%20de%20saber%20os%20modelos%20de%20som%20disponíveis.">Consultar Modelos no WhatsApp</a>
+    </div>
   </div>
 </section>
 
 <section>
   <h2>Móveis e Eletros</h2>
   <div class="grid-produtos">
-    
     <div class="card">
+      <span class="garantia">✅ 2 Meses de Garantia</span>
       <img src="1000057312.jpg" alt="Cama Casal">
       <h3>Cama Casal</h3>
-      <a class="btn btn-whatsapp" href="https://wa.me/554588040561?text=Olá!%20Tenho%20interesse%20na%20CAMA%20CASAL%20que%20vi%20no%20site.">Comprar no WhatsApp</a>
+      <a class="btn btn-whatsapp" href="https://wa.me/554588040561?text=Olá!%20Tenho%20interesse%20na%20Cama%20de%20Casal.">Comprar no WhatsApp</a>
     </div>
 
     <div class="card">
+      <span class="garantia">✅ 2 Meses de Garantia</span>
       <img src="1000057336.jpg" alt="Mesa com 4 Cadeiras">
       <h3>Mesa com 4 Cadeiras</h3>
-      <a class="btn btn-whatsapp" href="https://wa.me/554588040561?text=Olá!%20Tenho%20interesse%20na%20MESA%20COM%20CADEIRAS%20que%20vi%20no%20site.">Comprar no WhatsApp</a>
+      <a class="btn btn-whatsapp" href="https://wa.me/554588040561?text=Olá!%20Tenho%20interesse%20na%20Mesa%20com%20Cadeiras.">Comprar no WhatsApp</a>
     </div>
-
-    <div class="card">
-      <img src="1000057332.jpg" alt="Geladeira e Microondas">
-      <h3>Geladeira e Micro-ondas</h3>
-      <a class="btn btn-whatsapp" href="https://wa.me/554588040561?text=Olá!%20Tenho%20interesse%20na%20GELADEIRA%20que%20vi%20no%20site.">Comprar no WhatsApp</a>
-    </div>
-
-  </div>
-</section>
-
-<section>
-  <h2>Som e Instrumentos Musicais</h2>
-  <div class="grid-produtos">
-    
-    <div class="card" style="border: 2px solid #ff4b2b;">
-      <img src="1000057340.jpg" alt="Caixa de Som Philco">
-      <h3>Caixa de Som Philco</h3>
-      <a class="btn btn-som" href="https://wa.me/5545999568283?text=Olá!%20Tenho%20interesse%20na%20CAIXA%20DE%20SOM%20PHILCO.">Chamar no WhatsApp do Som</a>
-    </div>
-
   </div>
 </section>
 
@@ -150,7 +86,7 @@
   <div class="contact-info">
     <p>📍 <strong>Endereço:</strong> Rua Erechim, nº 1906 - Cascavel/PR</p>
     <hr>
-    <p>📱 <strong>Móveis e Consignação:</strong> (45) 8804-0561</p>
+    <p>📱 <strong>Móveis e Celulares:</strong> (45) 8804-0561</p>
     <p>🎸 <strong>Som e Instrumentos:</strong> (45) 99956-8283</p>
   </div>
 </section>
